@@ -1,0 +1,54 @@
+﻿body {
+}
+div.sidepanel {
+    margin-top:inherit;
+	position:relative ;
+	top:00px;
+	left:5px ;
+	width:205px;
+	text-align: center ;
+    }
+     a.menubutton:link, a.menubutton:visited {
+	text-decoration: none;
+	color: black;
+	background-color: #9cf;
+	display: block;
+	padding: 20px;
+    height: 23px;
+    width: 146px;
+    margin-right: 0px;
+}
+    a.menubutton:hover {
+	text-decoration: none ;
+	color: yellow ;
+	background-color: #000090 ;
+	display: block ;
+	padding: 20px ;
+    }
+    a.menubutton:active {
+	text-decoration: none ;
+	color: yellow ;
+	background-color: #0000c0 ;
+	display: block ;
+	padding: 20px ;
+    animation-direction:alternate;
+    border-bottom-color:burlywood;
+
+    }
+    a:link {
+	color: #009999;
+	
+    }
+    a:visited {
+	color:#ff006e;
+	background-color: transparent ;
+    }
+
+ div.fontstyle
+  {
+    font:500;
+    font-family:Algerian;
+    color:#009999;
+    background-clip:border-box;
+    
+ }

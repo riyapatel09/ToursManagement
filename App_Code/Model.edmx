@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DatabaseModelStoreContainer">
+          <EntitySet Name="reg " EntityType="DatabaseModel.Store.reg " store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="reg ">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="nchar" Nullable="false" MaxLength="20" />
+          <Property Name="password" Type="nchar" MaxLength="20" />
+          <Property Name="firstname" Type="nchar" MaxLength="20" />
+          <Property Name="lastname" Type="nchar" MaxLength="20" />
+          <Property Name="address" Type="nchar" MaxLength="20" />
+          <Property Name="city" Type="nchar" MaxLength="20" />
+          <Property Name="pincode" Type="nchar" MaxLength="20" />
+          <Property Name="email" Type="nchar" MaxLength="30" />
+          <Property Name="phone" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6013: The table/view 'C:\USERS\RIYA\DOCUMENTS\VISUAL STUDIO 2012\WEBSITES\WEBSITE1\APP_DATA\DATABASE.MDF.dbo.book' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="book">
+        <Property Name="username" Type="nchar" MaxLength="20" />
+        <Property Name="password" Type="nchar" MaxLength="20" />
+        <Property Name="package_no" Type="int" />
+        <Property Name="start_date" Type="date" />
+        <Property Name="total_amount" Type="nchar" MaxLength="30" />
+        <Property Name="hotel_type" Type="nchar" MaxLength="30" />
+        <Property Name="hotel_name" Type="nchar" MaxLength="30" />
+        <Property Name="room_type" Type="nchar" MaxLength="30" />
+        <Property Name="paymentby" Type="nchar" MaxLength="30" />
+        <Property Name="bank_name" Type="nchar" MaxLength="30" />
+        <Property Name="bank_branch" Type="nchar" MaxLength="30" />
+        <Property Name="bank_city" Type="nchar" MaxLength="30" />
+        <Property Name="bank_state" Type="nchar" MaxLength="30" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'C:\USERS\RIYA\DOCUMENTS\VISUAL STUDIO 2012\WEBSITES\WEBSITE1\APP_DATA\DATABASE.MDF.dbo.price1' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="price1">
+        <Property Name="package no" Type="int" />
+        <Property Name="hotel" Type="nchar" MaxLength="10" />
+        <Property Name="hotel_name" Type="nchar" MaxLength="10" />
+        <Property Name="room_type" Type="nchar" MaxLength="10" />
+        <Property Name="adult_price" Type="int" />
+        <Property Name="children_price" Type="int" />
+        <Property Name="days" Type="int" />
+        <Property Name="nights" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'C:\USERS\RIYA\DOCUMENTS\VISUAL STUDIO 2012\WEBSITES\WEBSITE1\APP_DATA\DATABASE.MDF.dbo.tours' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tours">
+        <Property Name="package no" Type="int" />
+        <Property Name="place" Type="nchar" MaxLength="20" />
+        <Property Name="package_des" Type="nchar" MaxLength="100" />
+        <Property Name="start_city" Type="nchar" MaxLength="20" />
+        <Property Name="days" Type="nchar" MaxLength="10" />
+        <Property Name="nights" Type="nchar" MaxLength="10" />
+        <Property Name="start_date" Type="date" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DatabaseEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="reg_" EntityType="DatabaseModel.reg_" />
+        </EntityContainer>
+        <EntityType Name="reg_">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="password" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="firstname" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="lastname" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="address" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="city" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="pincode" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="email" Type="String" MaxLength="30" Unicode="true" FixedLength="true" />
+          <Property Name="phone" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+          <EntitySetMapping Name="reg_">
+            <EntityTypeMapping TypeName="DatabaseModel.reg_">
+              <MappingFragment StoreEntitySet="reg ">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

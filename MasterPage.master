@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       
+        .newStyle1 {
+            background-image: url('/WebSite1/Images/himachal/h2.png');
+        }
+        .newStyle2 {
+            background-image: url('/WebSite1/Images/butterfly.jpg');
+       
+             }
+        .newStyle3 {
+            background-image: url('/WebSite1/Images/s4.png');
+              
+            
+          
+
+        }
+       
+        .newStyle4 {
+            color: black;
+        }
+       
+        .newStyle5 {
+            color: #0000FF;
+        }
+        .newStyle6 {
+            color: #0000FF;
+        }
+        .newStyle7 {
+            background-image: url('/WebSite1/Images/himachal/h4.png');
+        }
+       
+    
+     
+       
+    
+      
+    
+     
+       
+    
+       
+       
+    
+     
+       
+    
+      
+    
+     
+       
+    
+     
+    
+     
+       
+    
+      
+    
+     
+       
+    
+       
+       
+    
+     
+       
+    
+      
+    
+     
+       
+    
+    </style>
+</head>
+<body class="newStyle3" style="color: #000000; background-color: #FFFFFF;">
+   
+    <form id="form1" runat="server">
+    <div style="color: white"><header style=" color: black; font-weight: 700; margin-bottom: 31px;" >
+        
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx" ForeColor="Blue">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/aboutus.aspx" ForeColor="Blue">About Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/contact.aspx" ForeColor="Blue">Contact Us</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink9" runat="server" ForeColor="Blue" NavigateUrl="~/registration.aspx">Register</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/login.aspx" style="z-index: 1; left: 374px; top: 10px; position: absolute" ForeColor="Blue">Login</asp:HyperLink>
+        </header>
+      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+          <p style="color: black; background-color: #FFFFFF;" class="newStyle8">
+              <br />
+          </p>
+        </asp:ContentPlaceHolder>
+       <footer style="color: #FFFFFF; ">
+
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/home.aspx" ForeColor="Blue">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/aboutus.aspx" ForeColor="Blue">About Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/contact.aspx" ForeColor="Blue">ContactUs</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="Blue" NavigateUrl="~/registration.aspx">Register</asp:HyperLink>
+            <br />
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
